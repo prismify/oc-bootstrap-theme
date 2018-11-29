@@ -1,0 +1,79 @@
+tabs:
+    fields:
+        ####################################################
+        # Tab: Info
+        ####################################################
+        info_section:
+            tab: Info
+            label: General
+            type: section
+
+        website_name:
+            tab: Info
+            label: Website Name
+            type: text
+            span: left
+            default: Bootstrap Starter Kit
+
+        website_author:
+            tab: Info
+            label: Website Author
+            type: text
+            span: right
+            default: Sergey Sukhorukov
+
+        website_logotype:
+            tab: Info
+            label: Website Logotype
+            type: mediafinder
+            mode: file
+            span: left
+
+        website_url:
+            tab: Info
+            label: Website Address
+            type: text
+            default: "https://example.org"
+            span: right
+
+        website_social:
+            tab: Info
+            label: Social Networks
+            type: repeater
+            form:
+                fields:
+                    name:
+                        label: Name
+                        type: text
+                    link:
+                        label: Link
+                        type: text
+                    icon:
+                        label: Icon
+                        type: text
+
+        meta_section:
+            tab: Info
+            label: Meta
+            type: section
+
+        meta_description:
+            tab: Info
+            label: Meta Description
+            type: textarea
+            size: tiny
+            span: full
+
+        meta_keywords:
+            tab: Info
+            label: Meta Keywords
+            type: textarea
+            size: tiny
+            span: full
+
+        meta_title:
+            tab: Info
+            label: Meta Title
+            type: textarea
+            size: tiny
+            span: full

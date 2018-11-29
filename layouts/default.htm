@@ -1,0 +1,33 @@
+description = "Default layout"
+==
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="{% if this.page.description %}{{ this.page.description }}{% else %}{{ this.theme.meta_description }}{% endif %}">
+        <meta name="keywords" content="{% if this.page.keywords %}{{ this.page.keywords }}{% else %}{{ this.theme.meta_keywords }}{% endif %}">
+        <meta name="title" content="{% if this.page.title %}{{ this.page.title }}{% else %}{{ this.theme.meta_title }}{% endif %}">
+        <meta name="author" content="{{ this.theme.website_author }}">
+        <link rel="icon" href="{{ 'assets/images/favicon.ico'|theme }}">
+        <link href="{{ 'assets/css/app.css'|theme }}" rel="stylesheet">
+        {% styles %}
+        <title>{% if this.page.title %}{{ this.page.title }}{% else %}{{ this.theme.meta_title }}{% endif %} - {{ this.theme.website_name }}</title>
+    </head>
+    <body class="layout-{{ this.layout.id }} page-{{ this.page.id }}">
+        <div id="site-header" class="site-header">
+            {% partial 'site/header' %}
+        </div>
+        <div id="site-content" class="site-content">
+            {% partial 'site/content' %}
+        </div>
+        <div id="site-footer" class="site-footer">
+            {% partial 'site/footer' %}
+        </div>
+
+        <script src="{{ 'assets/js/app.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+    </body>
+
+</html>

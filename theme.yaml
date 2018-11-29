@@ -1,0 +1,7 @@
+name: "Bootstrap v4 Starter Kit"
+description: "Build responsive, mobile-first themes on the web with the world's most popular front-end component library."
+previewImage: "assets/images/theme-preview.png"
+author: "Prismify"
+homepage: "https://github.com/prismify/oc-bootstrap-theme"
+code: "bootstrap-starter-kit"
+form: configs/fields.yaml
