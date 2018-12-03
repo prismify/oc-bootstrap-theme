@@ -11,14 +11,18 @@ let mix = require('laravel-mix');
  |
  */
 
+mix.js('sources/js/app.js', 'assets/js/app.js')
+    .sass('sources/sass/app.scss', 'assets/css/app.css')
+    .setPublicPath('assets');
+
 // Full API
-mix.js('sources/js/app.js', 'assets/js/app.js');
+// mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
 // mix.preact(src, output); <-- Identical to mix.js(), but registers Preact compilation.
 // mix.coffee(src, output); <-- Identical to mix.js(), but registers CoffeeScript compilation.
 // mix.ts(src, output); <-- TypeScript support. Requires tsconfig.json to exist in the same folder as webpack.mix.js
 // mix.extract(vendorLibs);
-mix.sass('sources/sass/app.scss', 'assets/css/app.css');
+// mix.sass(src, output);
 // mix.standaloneSass('src', output); <-- Faster, but isolated from Webpack.
 // mix.fastSass('src', output); <-- Alias for mix.standaloneSass().
 // mix.less(src, output);
@@ -33,7 +37,7 @@ mix.sass('sources/sass/app.scss', 'assets/css/app.css');
 // mix.sourceMaps(); // Enable sourcemaps
 // mix.version(); // Enable versioning.
 // mix.disableNotifications();
-mix.setPublicPath('assets');
+// mix.setPublicPath('path/to/public');
 // mix.setResourceRoot('prefix/for/resource/locators');
 // mix.autoload({}); <-- Will be passed to Webpack's ProvidePlugin.
 // mix.webpackConfig({}); <-- Override webpack.config.js, without editing the file directly.
