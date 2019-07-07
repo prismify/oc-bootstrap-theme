@@ -11,9 +11,25 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('sources/js/app.js', 'assets/js/app.js')
-    .sass('sources/sass/app.scss', 'assets/css/app.css')
-    .setPublicPath('assets');
+mix.options({
+    processCssUrls: false
+});
+
+mix.setPublicPath('assets/public');
+
+mix.sass('assets/src/scss/app.scss', 'css');
+
+mix.js('assets/src/js/app.js', 'js')
+    .extract([
+        'jquery',
+        'popper.js',
+        'bootstrap',
+    ]);
+
+mix.copyDirectory('assets/src/images', 'assets/public/images')
+    .copyDirectory('assets/src/webfonts', 'assets/public/webfonts');
+
+mix.version();
 
 // Full API
 // mix.js(src, output);
@@ -23,8 +39,6 @@ mix.js('sources/js/app.js', 'assets/js/app.js')
 // mix.ts(src, output); <-- TypeScript support. Requires tsconfig.json to exist in the same folder as webpack.mix.js
 // mix.extract(vendorLibs);
 // mix.sass(src, output);
-// mix.standaloneSass('src', output); <-- Faster, but isolated from Webpack.
-// mix.fastSass('src', output); <-- Alias for mix.standaloneSass().
 // mix.less(src, output);
 // mix.stylus(src, output);
 // mix.postCss(src, output, [require('postcss-some-plugin')()]);
@@ -43,12 +57,13 @@ mix.js('sources/js/app.js', 'assets/js/app.js')
 // mix.webpackConfig({}); <-- Override webpack.config.js, without editing the file directly.
 // mix.babelConfig({}); <-- Merge extra Babel configuration (plugins, etc.) with Mix's default.
 // mix.then(function () {}) <-- Will be triggered each time Webpack finishes building.
+// mix.dump(); <-- Dump the generated webpack config object to the console.
 // mix.extend(name, handler) <-- Extend Mix's API with your own components.
 // mix.options({
 //   extractVueStyles: false, // Extract .vue component styling to file, rather than inline.
 //   globalVueStyles: file, // Variables file to be imported in every component.
 //   processCssUrls: true, // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
 //   purifyCss: false, // Remove unused CSS selectors.
-//   uglify: {}, // Uglify-specific options. https://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
+//   terser: {}, // Terser-specific options. https://github.com/webpack-contrib/terser-webpack-plugin#options
 //   postCss: [] // Post-CSS options: https://github.com/postcss/postcss/blob/master/docs/plugins.md
 // });

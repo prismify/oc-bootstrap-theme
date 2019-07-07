@@ -1,0 +1,9 @@
+# Theme translate.
+#
+# Require: - RainLab:Translate
+# Example:
+#   en:
+#     site.name: 'Bootstrap'
+# Use:
+#   {{ 'site.name'|_ }}
+########################################################################################################################

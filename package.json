@@ -1,13 +1,15 @@
 {
   "name": "oc-bootstrap-theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Build responsive, mobile-first themes on the web with the world's most popular front-end component library.",
-  "main": "sources/js/app.js",
+  "main": "src/js/app.js",
   "scripts": {
-    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "build": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -27,11 +29,15 @@
   "license": "MIT",
   "homepage": "https://github.com/prismify/oc-bootstrap-theme",
   "devDependencies": {
-    "laravel-mix": "^3.0.0"
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^4.0.*",
+    "sass": "^1.17.2",
+    "sass-loader": "7.*",
+    "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
-    "bootstrap": "^4.1.3",
+    "bootstrap": "^4.3.*",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.6"
+    "popper.js": "^1.15.*"
   }
 }

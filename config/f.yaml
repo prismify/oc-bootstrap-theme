@@ -1,0 +1,14 @@
+# Theme customization.
+########################################################################################################################
+
+fields:
+    app_name:
+        label: App Name
+        type: text
+        span: left
+        default: Bootstrap Starter Kit
+    app_href:
+        label: App Href
+        type: text
+        default: "https://example.org"
+        span: right
