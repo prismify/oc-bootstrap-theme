@@ -13,8 +13,8 @@ To install from [the repository](https://github.com/prismify/oc-bootstrap-theme)
 
 ### Links to documentation to help you get started!
 
-* https://getbootstrap.com/docs/4.1/getting-started/introduction
-* https://getbootstrap.com/docs/4.1/getting-started/webpack
+* https://getbootstrap.com/docs/4.4/getting-started/introduction
+* https://getbootstrap.com/docs/4.4/getting-started/webpack
 * https://octobercms.com/docs/themes/development
 * https://octobercms.com/docs/cms/themes
 * https://laravel.com/docs/5.6/mix
