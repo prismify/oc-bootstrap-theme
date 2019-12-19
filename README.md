@@ -8,7 +8,7 @@ To install from the [Marketplace](https://octobercms.com/theme/prismify-bootstra
 
 To install from the backend, go to Settings -> Front-end Themes -> Find more themes and then search for Prismify.Bootstrap.
 
-To install from [the repository](https://github.com/prismify/oc-bootstrap-theme), `git clone https://github.com/prismify/oc-bootstrap-theme.git themes/bootstrap` and then run `npm install` from your theme root in order to pull in the dependencies.
+To install from [the repository](https://github.com/prismify/oc-bootstrap-theme), `git clone https://github.com/prismify/oc-bootstrap-theme.git themes/bootstrap` and then run `yarn && yarn develop` from your theme root in order to pull in the dependencies.
 
 
 ### Links to documentation to help you get started!

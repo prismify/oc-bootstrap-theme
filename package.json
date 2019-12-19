@@ -1,12 +1,13 @@
 {
   "name": "oc-bootstrap-theme",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Build responsive, mobile-first themes on the web with the world's most popular front-end component library.",
   "main": "src/js/app.js",
   "scripts": {
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
@@ -25,19 +26,30 @@
     "laravel",
     "bootstrap"
   ],
-  "author": "Prismify",
+  "author": {
+    "email": "hello@prismify.org",
+    "name": "Prismify Solutions",
+    "url": "https://prismify.org"
+  },
+  "maintainers": [
+    {
+      "name": "Sergey Sukhorukov",
+      "email": "algoriq@prismify.org",
+      "url": "https://prismify.org"
+    }
+  ],
   "license": "MIT",
   "homepage": "https://github.com/prismify/oc-bootstrap-theme",
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "laravel-mix": "^4.0.*",
-    "sass": "^1.17.2",
-    "sass-loader": "7.*",
-    "vue-template-compiler": "^2.6.10"
+    "laravel-mix": "^5.0.*",
+    "sass": "^1.23.7",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.*"
   },
   "dependencies": {
-    "bootstrap": "^4.3.*",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.15.*"
+    "bootstrap": "^4.4.*",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
   }
 }

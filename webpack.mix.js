@@ -29,8 +29,6 @@ mix.js('assets/src/js/app.js', 'js')
 mix.copyDirectory('assets/src/images', 'assets/public/images')
     .copyDirectory('assets/src/webfonts', 'assets/public/webfonts');
 
-mix.version();
-
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
