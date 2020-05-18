@@ -2,7 +2,7 @@
  * Bootstrap - Starter Kit
  *
  * @author Prismify
- * @version 1.0.4
+ * @version 1.0.5
  */
 
 window.$ = window.jQuery = require('jquery');
@@ -22,6 +22,6 @@ $(function() {
     // require('./components/more-components');
 
     // Modules
-    require('../../../../../modules/system/assets/js/framework');
-    require('../../../../../modules/system/assets/js/framework.extras');
+    require('../../../../modules/system/assets/js/framework');
+    require('../../../../modules/system/assets/js/framework.extras');
 });

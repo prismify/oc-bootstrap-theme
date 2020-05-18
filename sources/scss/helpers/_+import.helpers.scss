@@ -1,8 +1,6 @@
 // ======================================================================== //
-//
-// Name:            Bootstrap
-// Description:     Connecting the proper SCSS source code Bootstrap
-//
+// Import
 // ======================================================================== //
-
-@import "~bootstrap/scss/bootstrap";
+@import "functions";
+@import "variables";
+@import "mixins";

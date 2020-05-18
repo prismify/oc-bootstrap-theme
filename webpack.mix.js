@@ -15,19 +15,19 @@ mix.options({
     processCssUrls: false
 });
 
-mix.setPublicPath('assets/public');
+mix.setPublicPath('assets');
 
-mix.sass('assets/src/scss/app.scss', 'css');
+mix.sass('sources/scss/app.scss', 'css');
 
-mix.js('assets/src/js/app.js', 'js')
+mix.js('sources/js/app.js', 'js')
     .extract([
         'jquery',
         'popper.js',
         'bootstrap',
     ]);
 
-mix.copyDirectory('assets/src/images', 'assets/public/images')
-    .copyDirectory('assets/src/webfonts', 'assets/public/webfonts');
+mix.copyDirectory('sources/images', 'assets/images')
+    .copyDirectory('sources/webfonts', 'assets/webfonts');
 
 // Full API
 // mix.js(src, output);

@@ -1,8 +1,8 @@
 {
   "name": "oc-bootstrap-theme",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Build responsive, mobile-first themes on the web with the world's most popular front-end component library.",
-  "main": "src/js/app.js",
+  "main": "sources/js/app.js",
   "scripts": {
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -34,7 +34,7 @@
   "maintainers": [
     {
       "name": "Sergey Sukhorukov",
-      "email": "algoriq@prismify.org",
+      "email": "sergey.sukhorukov@prismify.org",
       "url": "https://prismify.org"
     }
   ],
@@ -48,8 +48,8 @@
     "vue-template-compiler": "^2.6.*"
   },
   "dependencies": {
-    "bootstrap": "^4.4.*",
-    "jquery": "^3.4.1",
+    "bootstrap": "^4.5.*",
+    "jquery": "^3.5.1",
     "popper.js": "^1.16.0"
   }
 }
