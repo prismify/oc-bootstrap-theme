@@ -26,7 +26,7 @@ View the changelog on the [Marketplace](https://octobercms.com/theme/prismify-bo
 
 ## License
 
-The Toolbox plugin is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Bootstrap theme is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ### Open to your ideas!
 
