@@ -1,10 +1,12 @@
-name: "Bootstrap v4 Starter Kit"
-description: "Build responsive, mobile-first themes on the web with the world's most popular front-end component library."
-author: "Prismify"
-homepage: "https://github.com/prismify/oc-bootstrap-theme"
-previewImage: "assets/images/theme-preview.png"
-code: "bootstrap-starter-kit"
-authorCode: "Prismify"
+name: 'Bootstrap v4 Starter Kit'
+description: 'Build responsive, mobile-first themes on the web with the world''s most popular front-end component library.'
+author: Prismify
+homepage: 'https://github.com/prismify/oc-bootstrap-theme'
+authorCode: Prismify
+code: bootstrap-starter-kit
+parent: ''
+database: '0'
+previewImage: assets/images/theme-preview.png
 form: config/f.yaml
 require: config/r.yaml
 translate: config/t.yaml

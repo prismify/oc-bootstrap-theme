@@ -2,18 +2,12 @@
  * Bootstrap - Starter Kit
  *
  * @author Prismify
- * @version 1.0.5
+ * @version 1.0.6
  */
 
+// Abstracts
 // -------------------------------------------------------------------------------- //
-// Options
-//
-// Quickly modify global styling by enabling or disabling optional features.
-// -------------------------------------------------------------------------------- //
-
-// Helpers
-// -------------------------------------------------------------------------------- //
-@import "helpers/+import.helpers";
+@import "abstracts/+import.abstracts";
 
 // Vendors
 // -------------------------------------------------------------------------------- //

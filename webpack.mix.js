@@ -22,7 +22,7 @@ mix.sass('sources/scss/app.scss', 'css');
 mix.js('sources/js/app.js', 'js')
     .extract([
         'jquery',
-        'popper.js',
+        '@popperjs/core',
         'bootstrap',
     ]);
 

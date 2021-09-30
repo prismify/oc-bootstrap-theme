@@ -2,11 +2,11 @@
  * Bootstrap - Starter Kit
  *
  * @author Prismify
- * @version 1.0.5
+ * @version 1.0.6
  */
 
 window.$ = window.jQuery = require('jquery');
-require('popper.js');
+require('@popperjs/core');
 require('bootstrap');
 
 // require('more-packages-installed-with-npm-install');
@@ -15,13 +15,8 @@ $(function() {
     "use strict";
 
     // Helpers
-    require('./helpers/bootstrap');
-    // require('.helpers/more-helpers');
+    // require('.abstracts/more-abstracts');
 
     // Components
     // require('./components/more-components');
-
-    // Modules
-    require('../../../../modules/system/assets/js/framework');
-    require('../../../../modules/system/assets/js/framework.extras');
 });

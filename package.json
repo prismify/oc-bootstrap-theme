@@ -1,16 +1,13 @@
 {
   "name": "oc-bootstrap-theme",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Build responsive, mobile-first themes on the web with the world's most popular front-end component library.",
   "main": "sources/js/app.js",
   "scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "mix": "mix",
+    "mix:watch": "mix watch",
+    "mix:watch-poll": "mix watch -- --watch-options-poll=1000",
+    "mix:build": "mix --production"
   },
   "repository": {
     "type": "git",
@@ -41,15 +38,16 @@
   "license": "MIT",
   "homepage": "https://github.com/prismify/oc-bootstrap-theme",
   "devDependencies": {
-    "cross-env": "^5.2.0",
-    "laravel-mix": "^5.0.*",
-    "sass": "^1.23.7",
-    "sass-loader": "^8.0.0",
-    "vue-template-compiler": "^2.6.*"
+    "laravel-mix": "^6.0.31",
+    "sass": "^1.42.1",
+    "sass-loader": "12.1.0"
   },
   "dependencies": {
-    "bootstrap": "^4.5.*",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.0"
+    "bootstrap": "^5.1.1",
+    "jquery": "^3.6.0",
+    "@popperjs/core": "^2.10.1"
+  },
+  "peerDependencies": {
+    "@popperjs/core": "^2.10.1"
   }
 }
