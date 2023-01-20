@@ -1,10 +1,16 @@
-title = "Error page (500)"
 url = "/error"
 layout = "default"
+title = "Error page (500)"
+description = "We're sorry, but something went wrong and the page cannot be displayed."
+meta_title = "Error"
+meta_description = "We're sorry, but something went wrong and the page cannot be displayed."
 ==
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h1 class="display-4">Error</h1>
-        <p class="lead">We're sorry, but something went wrong and the page cannot be displayed.</p>
+<div class="px-4 py-5 my-5 text-center">
+  <h1 class="display-5 fw-bold">Error</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">We're sorry, but something went wrong and the page cannot be displayed.</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <a href="{{ 'index'|page }}" class="btn btn-primary px-4 gap-3">Go to home</a>
     </div>
+  </div>
 </div>

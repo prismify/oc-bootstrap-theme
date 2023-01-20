@@ -4,3 +4,4 @@
 1.0.4: Upgrade compiling assets and small improvements (Say hello to the Laravel Mix v5.0)
 1.0.5: Upgrade Bootstrap and global improvements (Say hello to the Bootstrap v4.5)
 1.0.6: Dependency updates and added small improvements
+2.0.0: Updated dependencies, redesigned theme structure and added support for oc v3.2

@@ -1,19 +1,15 @@
-title = "Home"
 url = "/"
 layout = "default"
+title = "Home"
+description = "No description provided yet."
+meta_title = "No meta title provided yet."
+meta_description = "No meta description provided yet."
 ==
-<div class="the-intro min-vh-100 d-flex align-items-center">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center px-md-2">
-                <img class="img-fluid mb-3" src="{{ 'assets/images/bootstrap.svg'|theme }}" alt="Bootstrap Starter Kit" width="270" height="227">
-                <h1 class="display-4 fw-bold">Bootstrap Starter Kit</h1>
-                <div class="d-block mb-5">
-                    <small class="lead fw-normal">
-                        Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
-                    </small>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="px-4 py-5 my-5 text-center">
+  <img class="d-block mx-auto mb-4" src="{{ 'assets/images/bootstrap.svg'|theme }}" alt="" width="270" height="227">
+  <h1 class="display-5 fw-semibold">Bootstrap - Starter Kit</h1>
+  <div class="col-lg-6 mx-auto">
+    {% content 'home-hero' %}
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
+  </div>
 </div>

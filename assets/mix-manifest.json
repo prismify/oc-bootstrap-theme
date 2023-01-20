@@ -2,9 +2,5 @@
     "/js/app.js": "/js/app.js",
     "/js/manifest.js": "/js/manifest.js",
     "/css/app.css": "/css/app.css",
-    "/js/vendor.js": "/js/vendor.js",
-    "/images/bootstrap.svg": "/images/bootstrap.svg",
-    "/images/favicon.ico": "/images/favicon.ico",
-    "/images/theme-preview.png": "/images/theme-preview.png",
-    "/webfonts/.gitignore": "/webfonts/.gitignore"
+    "/js/vendor.js": "/js/vendor.js"
 }

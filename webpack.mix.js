@@ -12,22 +12,19 @@ let mix = require('laravel-mix');
  */
 
 mix.options({
-    processCssUrls: false
+  processCssUrls: false
 });
 
 mix.setPublicPath('assets');
 
-mix.sass('sources/scss/app.scss', 'css');
+mix.sass('assets/src/scss/app.scss', 'css');
 
-mix.js('sources/js/app.js', 'js')
-    .extract([
-        'jquery',
-        '@popperjs/core',
-        'bootstrap',
-    ]);
-
-mix.copyDirectory('sources/images', 'assets/images')
-    .copyDirectory('sources/webfonts', 'assets/webfonts');
+mix.js('assets/src/js/app.js', 'js')
+  .extract([
+    'jquery',
+    '@popperjs/core',
+    'bootstrap',
+  ]);
 
 // Full API
 // mix.js(src, output);

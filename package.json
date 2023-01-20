@@ -2,7 +2,7 @@
   "name": "oc-bootstrap-theme",
   "version": "1.0.6",
   "description": "Build responsive, mobile-first themes on the web with the world's most popular front-end component library.",
-  "main": "sources/js/app.js",
+  "main": "assets/src/js/app.js",
   "scripts": {
     "mix": "mix",
     "mix:watch": "mix watch",
@@ -38,16 +38,13 @@
   "license": "MIT",
   "homepage": "https://github.com/prismify/oc-bootstrap-theme",
   "devDependencies": {
-    "laravel-mix": "^6.0.31",
-    "sass": "^1.42.1",
-    "sass-loader": "12.1.0"
+    "laravel-mix": "^6.0.49",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.1.0"
   },
   "dependencies": {
-    "bootstrap": "^5.1.1",
-    "jquery": "^3.6.0",
-    "@popperjs/core": "^2.10.1"
-  },
-  "peerDependencies": {
-    "@popperjs/core": "^2.10.1"
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.0"
   }
 }
